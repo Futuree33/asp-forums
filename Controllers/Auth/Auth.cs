@@ -1,6 +1,7 @@
 using System.Security.Cryptography;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using MySqlX.XDevAPI;
 using WebApplication1.Data.Auth;
 using WebApplication1.Database;
 using WebApplication1.Database.Models;
@@ -11,11 +12,11 @@ namespace WebApplication1.Controllers.Auth;
 
 [ApiController]
 [Route("/api/auth")]
-public class Auth : ControllerBase
+public class AuthController : ControllerBase
 {
     private readonly DatabaseContext _dbContext;
 
-    public Auth(DatabaseContext dbContext)
+    public AuthController(DatabaseContext dbContext)
     {
         _dbContext = dbContext;
     }
@@ -24,10 +25,13 @@ public class Auth : ControllerBase
     public async Task<IActionResult> Login([FromBody] LoginRequestUser basicUser)
     {
         var user = await _dbContext.Users.Where(pr => pr.Username == basicUser.Username).FirstOrDefaultAsync();
-        
-        return user is null || !Bcrypt.Verify(basicUser.Password, user.Password)
-            ? Unauthorized()
-            : Ok();
+
+        if (user is null || !Bcrypt.Verify(basicUser.Password, user.Password))
+            return Unauthorized();
+
+        HttpContext.Session.SetInt32("user", user.Id);
+
+        return Ok();
     }
     
     [HttpPost("register")]
