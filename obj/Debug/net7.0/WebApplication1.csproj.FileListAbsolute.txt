@@ -68,3 +68,8 @@ C:\Users\evan\RiderProjects\WebApplication1\WebApplication1\bin\Debug\net7.0\run
 C:\Users\evan\RiderProjects\WebApplication1\WebApplication1\bin\Debug\net7.0\BCrypt.Net-Core.dll
 C:\Users\evan\RiderProjects\WebApplication1\WebApplication1\bin\Debug\net7.0\Mapster.dll
 C:\Users\evan\RiderProjects\WebApplication1\WebApplication1\bin\Debug\net7.0\Mapster.Core.dll
+C:\Users\evan\RiderProjects\WebApplication1\WebApplication1\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
+C:\Users\evan\RiderProjects\WebApplication1\WebApplication1\bin\Debug\net7.0\MailKit.dll
+C:\Users\evan\RiderProjects\WebApplication1\WebApplication1\bin\Debug\net7.0\MimeKit.dll
+C:\Users\evan\RiderProjects\WebApplication1\WebApplication1\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\evan\RiderProjects\WebApplication1\WebApplication1\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll

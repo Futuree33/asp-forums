@@ -28,4 +28,3 @@ public class Unique : ValidationAttribute
             : new ValidationResult( _column + " already exists");
     }
 }
-
