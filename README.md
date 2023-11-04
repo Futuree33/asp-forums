@@ -1,16 +1,11 @@
 # Asp.net Forums!
 
-## routes currently available: 
+Decent first attempt with asp.net, currently rewriting this to be cleaner
 
-### Auth
-- POST /api/auth/login
-- POST /api/auth/register
-- POST /api/auth/verify-email
-- POST /api/auth/forgot-password
+## Things used:
+- EntityFramewok
+- Redis
+- MySQL
+- MailKit
 
-### Category
-- GET /api/categories
-
-### User
-- GET /api/user
-- POST /api/user/reset-password
+Check swagger to see availale routes
