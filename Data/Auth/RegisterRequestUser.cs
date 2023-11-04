@@ -1,13 +1,11 @@
 using System.ComponentModel.DataAnnotations;
 using Mapster;
-using Microsoft.EntityFrameworkCore;
 using WebApplication1.Data.Attributes;
 using WebApplication1.Database.Models;
 
 namespace WebApplication1.Data.Auth;
 
 [AdaptFrom(typeof(User))]
-
 public record RegisterRequestUser
 {
     [MaxLength(20), MinLength(4), Unique("users", "username")]

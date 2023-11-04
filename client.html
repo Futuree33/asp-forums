@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>reCAPTCHA demo: Simple page</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+<form action="?" method="POST">
+    <div class="g-recaptcha" data-sitekey="6LcgUY8fAAAAAKqhRAjR-LIfLlhhPT73dFZ8uJYB"></div>
+    <br/>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
+<script>
+    // on form submit get the response token from recaptcha and alert it to the user.
+    document.querySelector('form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var response = grecaptcha.getResponse();
+        alert(response);
+    });
+</script>

@@ -73,3 +73,11 @@ C:\Users\evan\RiderProjects\WebApplication1\WebApplication1\bin\Debug\net7.0\Mai
 C:\Users\evan\RiderProjects\WebApplication1\WebApplication1\bin\Debug\net7.0\MimeKit.dll
 C:\Users\evan\RiderProjects\WebApplication1\WebApplication1\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\evan\RiderProjects\WebApplication1\WebApplication1\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\evan\RiderProjects\WebApplication1\WebApplication1\bin\Debug\net7.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\evan\RiderProjects\WebApplication1\WebApplication1\bin\Debug\net7.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\Users\evan\RiderProjects\WebApplication1\WebApplication1\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\evan\RiderProjects\WebApplication1\WebApplication1\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\evan\RiderProjects\WebApplication1\WebApplication1\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\evan\RiderProjects\WebApplication1\WebApplication1\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\Users\evan\RiderProjects\WebApplication1\WebApplication1\bin\Debug\net7.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\evan\RiderProjects\WebApplication1\WebApplication1\bin\Debug\net7.0\StackExchange.Redis.dll

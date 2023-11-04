@@ -1,8 +1,5 @@
-
-
 using MailKit.Net.Smtp;
 using MimeKit;
-
 
 namespace WebApplication1.Services;
 
@@ -19,7 +16,7 @@ public class MailService
         _smtpClient.Authenticate(_configuration["MailerSettings:Username"], _configuration["MailerSettings:Password"]);
     }
     
-    public async Task SendAsync(string emailTo, string subject, BodyBuilder bodyBuilder)
+    public async Task Send(string emailTo, string subject, BodyBuilder bodyBuilder)
     {
         var message = new MimeMessage();
         
